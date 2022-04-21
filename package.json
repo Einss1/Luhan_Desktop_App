@@ -1,0 +1,14 @@
+{
+  "name": "luhan",
+  "version": "1.0.0",
+  "description": "Japanese language learning app",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Luan Navarro Silva - 2020344",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^18.1.0"
+  }
+}

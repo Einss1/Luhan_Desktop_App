@@ -76,3 +76,11 @@ body {
 .button2:hover {
     background-color: #d2deca;
 }
+
+.button3 {
+    border-color: aqua;
+}
+
+.button3:hover {
+    background-color: aqua;
+}
