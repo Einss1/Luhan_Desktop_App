@@ -8,125 +8,174 @@
     <title>New Kanjis</title>
     <link rel="stylesheet" href="CSS/newkanjis.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
 
-    //Create a return button
+    <button class="return" onclick="window.location.href='homepage.html'"></button>
 
     <img src="Images/logo2.png" alt="Luhan logo" id="logo">
     <br><br>
-    <div class="newkanjis">
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji1"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning1"></p>
-            </div>
 
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji2"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning2"></p>
-            </div>
-
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji3"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning3"></p>
-            </div>
-
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji4"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning4"></p>
-            </div>
-
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji5"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning5"></p>
-            </div>
-
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji6"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning6"></p>
-            </div>
-
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji7"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning7"></p>
-            </div>
-
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji8"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning8"></p>
-            </div>
-
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji9"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning9"></p>
-            </div>
-
-            <div class="mySlides">
-                <p class="kan">Kanji</p>
-                <p class="kanji10"></p>
-                <p class="mean">Meaning</p>
-                <p class="meaning10"></p>
-            </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji1"></p>
+            <p>Meaning</p>
+            <p id="meaning1"></p>
         </div>
-        <br>
-        <center>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </center>
-        <br>
-        <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji2"></p>
+            <p>Meaning</p>
+            <p id="meaning2"></p>
         </div>
-        <br>
-        <button class="complete" onclick="window.location.href='index.html'" ;>Complete</button>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji3"></p>
+            <p>Meaning</p>
+            <p id="meaning3"></p>
+        </div>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji4"></p>
+            <p>Meaning</p>
+            <p id="meaning4"></p>
+        </div>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji5"></p>
+            <p>Meaning</p>
+            <p id="meaning5"></p>
+        </div>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji6"></p>
+            <p>Meaning</p>
+            <p id="meaning6"></p>
+        </div>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji7"></p>
+            <p>Meaning</p>
+            <p id="meaning7"></p>
+        </div>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji8"></p>
+            <p>Meaning</p>
+            <p id="meaning8"></p>
+        </div>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji9"></p>
+            <p>Meaning</p>
+            <p id="meaning9"></p>
+        </div>
+        <div class="mySlides">
+            <p>Kanji</p>
+            <p id="kanji10"></p>
+            <p>Meaning</p>
+            <p id="meaning10"></p>
+        </div>
+    </div>
+    <br>
+    <center>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </center>
+    <br>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+    <br>
+    <script>
+        function levelup() {
+            fetch('./info.txt')
+                .then(response => response.text())
+                .then((data) => {
+                    var d = parseInt(data);
+                    newLevel = d + 1;
+                    stringLevel = newLevel.toString();
 
-        <script src="JavaScript/slides.js"></script>
+                    
+                    const fs = require('fs')
+                    fs.writeFile('./info.txt','', function(){console.log('file emptied')});
+                    fs.writeFile('./info.txt', stringLevel , function(){console.log('level updated')});
+                    window.location.href = "homepage.html";
+                });
+        }
+    </script>
+    <button class="complete" onclick="levelup()" ;>Complete</button>
 
-        <script>
-            $(document).ready(function(){
-                $.ajax({
-                type: "GET",
-	            url: "kanjis.xml",
-	            dataType: "xml",
-	            success: function(xml) {
-                    $(xml).find('level1').each(function(){
-                        var kanji1 = $(this).find('kanji1').text(); 
-                        var meaning1 = $(this).find('meaning1').text();
-                        console.log(kanji1);
+    <script src="JavaScript/slides.js"></script>
+
+    <script>
+
+        let kanji1 = document.getElementById("kanji1")
+        let meaning1 = document.getElementById('meaning1');
+        let kanji2 = document.getElementById('kanji2');
+        let meaning2 = document.getElementById('meaning2');
+        let kanji3 = document.getElementById('kanji3');
+        let meaning3 = document.getElementById('meaning3');
+        let kanji4 = document.getElementById('kanji4');
+        let meaning4 = document.getElementById('meaning4');
+        let kanji5 = document.getElementById('kanji5');
+        let meaning5 = document.getElementById('meaning5');
+        let kanji6 = document.getElementById('kanji6');
+        let meaning6 = document.getElementById('meaning6');
+        let kanji7 = document.getElementById('kanji7');
+        let meaning7 = document.getElementById('meaning7');
+        let kanji8 = document.getElementById('kanji8');
+        let meaning8 = document.getElementById('meaning8');
+        let kanji9 = document.getElementById('kanji9');
+        let meaning9 = document.getElementById('meaning9');
+        let kanji10 = document.getElementById('kanji10');
+        let meaning10 = document.getElementById('meaning10');
+
+        fetch('kanjis.xml')
+            .then(response => response.text())
+            .then(data => {
+                let parser = new DOMParser();
+                let xml = parser.parseFromString(data, "text/xml");
+                fetch('./info.txt')
+                .then(response => response.text())
+                .then((data) => {
+                    let level = xml.querySelectorAll('level' + data);
+                    kanji1.innerText = level[0].childNodes[1].textContent;
+                    kanji2.innerText = level[0].childNodes[5].textContent;
+                    kanji3.innerText = level[0].childNodes[9].textContent;
+                    kanji4.innerText = level[0].childNodes[13].textContent;
+                    kanji5.innerText = level[0].childNodes[17].textContent;
+                    kanji6.innerText = level[0].childNodes[21].textContent;
+                    kanji7.innerText = level[0].childNodes[25].textContent;
+                    kanji8.innerText = level[0].childNodes[29].textContent;
+                    kanji9.innerText = level[0].childNodes[33].textContent;
+                    kanji10.innerText = level[0].childNodes[37].textContent;
+                    meaning1.innerText = level[0].childNodes[3].textContent;
+                    meaning2.innerText = level[0].childNodes[7].textContent;
+                    meaning3.innerText = level[0].childNodes[11].textContent;
+                    meaning4.innerText = level[0].childNodes[15].textContent;
+                    meaning5.innerText = level[0].childNodes[19].textContent;
+                    meaning6.innerText = level[0].childNodes[23].textContent;
+                    meaning7.innerText = level[0].childNodes[27].textContent;
+                    meaning8.innerText = level[0].childNodes[31].textContent;
+                    meaning9.innerText = level[0].childNodes[35].textContent;
+                    meaning10.innerText = level[0].childNodes[39].textContent;
                     });
-	            }
+
             });
-            });
-        </script>
+    </script>
 </body>
 
 </html>

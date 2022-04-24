@@ -1,64 +1,312 @@
 <kanjis>
-	<level1>
-		<kanji1>
+    <level1>
+        <kanji1>
             一
         </kanji1>
-		<meaning1>
+        <meaning1>
             one
         </meaning1>
-		<kanji2>
+        <kanji2>
             二
         </kanji2>
-		<meaning2>
+        <meaning2>
             two
         </meaning2>
-		<kanji3>
+        <kanji3>
             三
         </kanji3>
-		<meaning3>
+        <meaning3>
             three
         </meaning3>
-		<kanji4>
+        <kanji4>
             四
         </kanji4>
-		<meaning4>
+        <meaning4>
             four
         </meaning4>
-		<kanji5>
+        <kanji5>
             五
         </kanji5>
-		<meaning5>
+        <meaning5>
             five
         </meaning5>
-		<kanji6>
+        <kanji6>
             六
         </kanji6>
-		<meaning6>
+        <meaning6>
             six
         </meaning6>
-		<kanji7>
+        <kanji7>
             七
         </kanji7>
-		<meaning7>
+        <meaning7>
             seven
         </meaning7>
-		<kanji8>
+        <kanji8>
             八
         </kanji8>
-		<meaning8>
+        <meaning8>
             eight
         </meaning8>
-		<kanji9>
+        <kanji9>
             九
         </kanji9>
-		<meaning9>
+        <meaning9>
             nine
         </meaning9>
-		<kanji10>
+        <kanji10>
             十
         </kanji10>
-		<meaning10>
+        <meaning10>
             ten
         </meaning10>
-	</level1>
+    </level1>
+    <level2>
+        <kanji1>
+            こんにちわ
+        </kanji1>
+        <meaning1>
+            hello
+        </meaning1>
+        <kanji2>
+            さようなら
+        </kanji2>
+        <meaning2>
+            bye
+        </meaning2>
+        <kanji3>
+            お願いします
+        </kanji3>
+        <meaning3>
+            please
+        </meaning3>
+        <kanji4>
+            はい。
+        </kanji4>
+        <meaning4>
+            yes
+        </meaning4>
+        <kanji5>
+            いいえ
+        </kanji5>
+        <meaning5>
+            no
+        </meaning5>
+        <kanji6>
+            オーケー
+        </kanji6>
+        <meaning6>
+            ok
+        </meaning6>
+        <kanji7>
+            助けて
+        </kanji7>
+        <meaning7>
+            help
+        </meaning7>
+        <kanji8>
+            ごめんなさい
+        </kanji8>
+        <meaning8>
+            sorry
+        </meaning8>
+        <kanji9>
+            すみません
+        </kanji9>
+        <meaning9>
+            excuse me
+        </meaning9>
+        <kanji10>
+            ありがとうございます。
+        </kanji10>
+        <meaning10>
+            thank you
+        </meaning10>
+    </level2>
+    <level3>
+        <kanji1>
+            月曜日
+        </kanji1>
+        <meaning1>
+            Monday
+        </meaning1>
+        <kanji2>
+            火曜日
+        </kanji2>
+        <meaning2>
+            Tuesday
+        </meaning2>
+        <kanji3>
+            水曜日
+        </kanji3>
+        <meaning3>
+            Wednesday
+        </meaning3>
+        <kanji4>
+            木曜日
+        </kanji4>
+        <meaning4>
+            Thursday
+        </meaning4>
+        <kanji5>
+            金曜日
+        </kanji5>
+        <meaning5>
+            Friday
+        </meaning5>
+        <kanji6>
+            土曜日
+        </kanji6>
+        <meaning6>
+            Saturday
+        </meaning6>
+        <kanji7>
+            日曜日
+        </kanji7>
+        <meaning7>
+            Sunday
+        </meaning7>
+        <kanji8>
+            今日
+        </kanji8>
+        <meaning8>
+            Today
+        </meaning8>
+        <kanji9>
+            明日
+        </kanji9>
+        <meaning9>
+            Tomorrow
+        </meaning9>
+        <kanji10>
+            昨日
+        </kanji10>
+        <meaning10>
+            Yesterday
+        </meaning10>
+    </level3>
+    <level4>
+        <kanji1>
+            天気
+        </kanji1>
+        <meaning1>
+            Weather
+        </meaning1>
+        <kanji2>
+            寒い
+        </kanji2>
+        <meaning2>
+            Cold
+        </meaning2>
+        <kanji3>
+            暑い
+        </kanji3>
+        <meaning3>
+            Hot
+        </meaning3>
+        <kanji4>
+            曇った
+        </kanji4>
+        <meaning4>
+            Cloudy
+        </meaning4>
+        <kanji5>
+            雨
+        </kanji5>
+        <meaning5>
+            Rain
+        </meaning5>
+        <kanji6>
+            雪
+        </kanji6>
+        <meaning6>
+            Snow
+        </meaning6>
+        <kanji7>
+            晴天の
+        </kanji7>
+        <meaning7>
+            Sunny
+        </meaning7>
+        <kanji8>
+            悪天候
+        </kanji8>
+        <meaning8>
+            Bad weather
+        </meaning8>
+        <kanji9>
+            好天気
+        </kanji9>
+        <meaning9>
+            Nice weather
+        </meaning9>
+        <kanji10>
+            風の強い
+        </kanji10>
+        <meaning10>
+            Windy
+        </meaning10>
+    </level4>
+    <level5>
+        <kanji1>
+            黒
+        </kanji1>
+        <meaning1>
+            Black
+        </meaning1>
+        <kanji2>
+            白
+        </kanji2>
+        <meaning2>
+            White
+        </meaning2>
+        <kanji3>
+            緑
+        </kanji3>
+        <meaning3>
+            Green
+        </meaning3>
+        <kanji4>
+            黄
+        </kanji4>
+        <meaning4>
+            Yellow
+        </meaning4>
+        <kanji5>
+            赤
+        </kanji5>
+        <meaning5>
+            Red
+        </meaning5>
+        <kanji6>
+            青
+        </kanji6>
+        <meaning6>
+            Blue
+        </meaning6>
+        <kanji7>
+            紫
+        </kanji7>
+        <meaning7>
+            Purple
+        </meaning7>
+        <kanji8>
+            ピンク
+        </kanji8>
+        <meaning8>
+            Pink
+        </meaning8>
+        <kanji9>
+            茶
+        </kanji9>
+        <meaning9>
+            Brown
+        </meaning9>
+        <kanji10>
+            灰
+        </kanji10>
+        <meaning10>
+            Grey
+        </meaning10>
+    </level5>
 </kanjis>
