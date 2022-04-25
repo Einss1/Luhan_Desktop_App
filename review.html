@@ -7,24 +7,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review</title>
     <link rel="stylesheet" href="CSS/review.css">
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <button class="return" onclick="window.location.href='homepage.html'"></button>
 
     <img src="Images/logo2.png" alt="Luhan logo" id="logo">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
     <center>
+        <br><br>
         <div class="main">
-            <p>Display Kanji</p>
-            <br><br><br><br><br>
-            <form>
-                <button>
-                    Next
-                </button>
-            </form>
+            <p id="kanji"></p>
+            <input type="text" id="answer">
+            <br>
+            <button id="next">Next</button>
         </div>
+
+        <script>
+            let kanji = document.getElementById("kanji");
+            var kanjis = [];
+            var meanings = [];
+            let correctAnswer;
+
+            fetch('kanjis.xml')
+                .then(response => response.text())
+                .then(data => {
+                    let parser = new DOMParser();
+                    let xml = parser.parseFromString(data, "text/xml");
+                    fetch('./info.txt')
+                        .then(response => response.text())
+                        .then((data) => {
+                            for (var data; data >= 1; data--) {
+                                level = xml.querySelectorAll('level' + data);
+                                kanji1 = level[0].childNodes[1].textContent;
+                                kanji2 = level[0].childNodes[5].textContent;
+                                kanji3 = level[0].childNodes[9].textContent;
+                                kanji4 = level[0].childNodes[13].textContent;
+                                kanji5 = level[0].childNodes[17].textContent;
+                                kanji6 = level[0].childNodes[21].textContent;
+                                kanji7 = level[0].childNodes[25].textContent;
+                                kanji8 = level[0].childNodes[29].textContent;
+                                kanji9 = level[0].childNodes[33].textContent;
+                                kanji10 = level[0].childNodes[37].textContent;
+                                kanjis.push(kanji1, kanji2, kanji3, kanji4, kanji5, kanji6, kanji7, kanji8, kanji9, kanji10);
+                                meaning1 = level[0].childNodes[3].textContent;
+                                meaning2 = level[0].childNodes[7].textContent;
+                                meaning3 = level[0].childNodes[11].textContent;
+                                meaning4 = level[0].childNodes[15].textContent;
+                                meaning5 = level[0].childNodes[19].textContent;
+                                meaning6 = level[0].childNodes[23].textContent;
+                                meaning7 = level[0].childNodes[27].textContent;
+                                meaning8 = level[0].childNodes[31].textContent;
+                                meaning9 = level[0].childNodes[35].textContent;
+                                meaning10 = level[0].childNodes[39].textContent;
+                                meanings.push(meaning1, meaning2, meaning3, meaning4, meaning5, meaning6, meaning7, meaning8, meaning9, meaning10);
+                            }
+                            var currentIndex = kanjis.length, temporaryValue, randomIndex;
+                            while (0 !== currentIndex) {
+                                randomIndex = Math.floor(Math.random() * currentIndex);
+                                currentIndex -= 1;
+                                temporaryValue = kanjis[currentIndex];
+                                kanjis[currentIndex] = kanjis[randomIndex];
+                                kanjis[randomIndex] = temporaryValue;
+                                temporaryValue = meanings[currentIndex];
+                                meanings[currentIndex] = meanings[randomIndex];
+                                meanings[randomIndex] = temporaryValue;
+                            }
+                            let i = 0;
+                            kanji.innerText = kanjis.at(i);
+                            correctAnswer = meanings.at(i);
+                            
+                            var button = document.getElementById('next');
+                            button.addEventListener("click", function(event){
+                                userAnswer = document.getElementById('answer').value
+                                if (userAnswer.trim() === correctAnswer.trim()) {
+                                    window.alert('right answer')
+                                    location.reload()
+                                }
+                                if (userAnswer.trim() != correctAnswer.trim()) {
+                                    window.alert('wrong answer, the correct answer was: ' + correctAnswer)
+                                    location.reload()
+                                }
+                            });
+                        });
+                });
+
+
+        </script>
     </center>
 </body>
 

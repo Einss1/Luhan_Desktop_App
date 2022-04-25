@@ -36,22 +36,13 @@ body {
     margin-right: auto;
     margin-top: 2%;
     width: 500px;
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  
-@keyframes slidein {
-    from {
-        margin-top: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1px;
-    }
-  
-    to {
-        margin-top: 2%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 500px;
-    }
+}
+
+.main {
+  width: 500px;
+  margin: auto;
+  background-color: #ffffffaf;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 20px;
 }
