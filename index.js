@@ -15,10 +15,9 @@ app.on('ready', function(){
             nodeIntegration: true,
             contextIsolation: false,
         },
-        width:1500,
-        height:1000,
+        width:1000,
+        height:975,
         title:'Luhan',
-        resizable: false,
         icon:'Images/icon.png',
     });
 
@@ -52,7 +51,6 @@ function createAddWindow(){
         width:300,
         height:200,
         title:'Journal Entry',
-        resizable: false,
         icon:'Images/icon.png',
     });
 
@@ -101,6 +99,25 @@ const mainMenuTemplate = [
         ]
     }
 ];
+
+if(process.env.NODE._ENV !== 'production') {
+    mainMenuTemplate.push({
+        label: 'Developer Tools',
+        submenu: [
+            {
+                label: 'Toggle DevTools',
+                accelerator: process.platform == 'darwin' ? 'Command+I' :
+                'Ctrl+I',
+                click(item, focusedWindow){
+                    focusedWindow.toggleDevTools();
+                }
+            },
+            {
+                role: 'reload'
+            }
+        ]
+    });
+}
 
 
 

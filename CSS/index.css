@@ -41,35 +41,38 @@ body {
   
 .button {
     border: 5px solid;
-    font-size: 16px;
+    font-size: 30px;
+    color:rgb(37, 150, 190);
+    font-style: bold;
+    font-family: 'Rubik Bubbles', cursive;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
     width: 300px;
     height: 100px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.945);
 }
 
 .button1{
-    border-color: #e9a756;
+    border-color: #d86565;
 }
 
 .button1:hover {
-    background-color: #e9a756;
+    background-color: #d86565;
 }
 
 .button2 {
-    border-color: #d2deca;
+    border-color: #d86565;
 }
 
 .button2:hover {
-    background-color: #d2deca;
+    background-color: #d86565;
 }
 
 .button3 {
-    border-color: aqua;
+    border-color: #d86565;
 }
 
 .button3:hover {
-    background-color: aqua;
+    background-color: #d86565;
 }
