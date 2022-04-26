@@ -17,7 +17,9 @@ app.on('ready', function(){
         },
         width:1500,
         height:1000,
-        title:'Luhan'
+        title:'Luhan',
+        resizable: false,
+        icon:'Images/icon.png',
     });
 
     //Loads html into window
@@ -49,7 +51,9 @@ function createAddWindow(){
         autoHideMenuBar: true,
         width:300,
         height:200,
-        title:'Journal Entry'
+        title:'Journal Entry',
+        resizable: false,
+        icon:'Images/icon.png',
     });
 
     //Loads html into window

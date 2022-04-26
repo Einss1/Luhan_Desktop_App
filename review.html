@@ -25,6 +25,8 @@
             <button id="next">Next</button>
         </div>
 
+        <br>
+        <p id="rightwrong"></p>
         <script>
             let kanji = document.getElementById("kanji");
             var kanjis = [];
@@ -82,13 +84,19 @@
                             var button = document.getElementById('next');
                             button.addEventListener("click", function(event){
                                 userAnswer = document.getElementById('answer').value
+                                let rightwrong = document.getElementById("rightwrong");
                                 if (userAnswer.trim() === correctAnswer.trim()) {
-                                    window.alert('right answer')
-                                    location.reload()
+                                    rightwrong.innerText = "Right answer!";
+                                    setTimeout(function(){
+                                        location.reload()
+                                    },2500);
+
                                 }
                                 if (userAnswer.trim() != correctAnswer.trim()) {
-                                    window.alert('wrong answer, the correct answer was: ' + correctAnswer)
-                                    location.reload()
+                                    rightwrong.innerText = "Wrong answer! The correct answer was \n" + correctAnswer;
+                                    setTimeout(function(){
+                                        location.reload()
+                                    },2500);
                                 }
                             });
                         });

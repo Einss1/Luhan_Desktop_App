@@ -46,3 +46,12 @@ body {
   font-weight: 700;
   border-radius: 20px;
 }
+
+#rightwrong {
+  width: 500px;
+  margin: auto;
+  background-color: #ffffffaf;
+  font-size: 28px;
+  font-weight: 700;
+  border-radius: 20px;
+}
