@@ -1,14 +1,18 @@
 {
   "name": "luhan",
   "version": "1.0.0",
-  "description": "Japanese language learning app",
+  "description": "A japanese language learning application",
   "main": "index.js",
-  "scripts": {
-    "start": "electron ."
-  },
   "author": "Luan Navarro Silva - 2020344",
-  "license": "ISC",
-  "dependencies": {
-    "electron": "^18.1.0"
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . luhan --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Luhan\"",    
+    "package-linux": "electron-packager . luhan --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "devDependencies": {
+    "electron": "^18.1.0",
+    "electron-packager": "^15.5.1"
   }
 }
